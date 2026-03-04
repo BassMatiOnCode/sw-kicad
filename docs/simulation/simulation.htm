@@ -1,0 +1,36 @@
+﻿<html><head>
+<link rel="stylesheet" href="/inc/webcat/page-structure/study-page.css" />
+<style>
+table { border-collapse : collapse }
+td, th { border : 1px solid silver ; padding : 3px 5px }
+th { font-weight : normal }
+</style>
+</head><body>
+
+<h1>Circuit Simulation</h1>
+
+<h2 cbc>DC Operating Point</h2><div>
+
+<ol>
+<li>Place Device:R = 1k.</li>
+<li>Place Simulation_SPICE:VDC = 5</li>
+<li>Place Simulation_SPICE:0 (reference = #GND01)</li>
+<li>Connect VDC(+) to R(1) </li>
+<li>Connect VDC(-) and R(2) to 0</li>
+</ol>
+
+<figure class="figure"><figcaption>Schematic diagram</figcaption>
+<img src="fig-01.png" width="500"</figure>
+
+<ol start="6">
+<li>Open the simulator window.</li>
+<li>Run a simulation. Select "DC operating point" in the "New Simulation Tab" dialog.</li>
+<li>Click OK.</li>
+<li>Inspect the simulation results in the console window.</li>
+</ol>
+
+<p>The simulation provides voltage, current and power values. These values also appear as red labels in the schematic diagram.</p>
+
+</div><!--h2--DC Operating Point-->
+
+</body></html>
